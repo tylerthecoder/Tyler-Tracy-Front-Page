@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "10"
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+deploy:
+  provider: s3
+  access_key_id: "$AWS_KEY"
+  secret_access_key: "$AWS_SECRET"
+  bucket: "tgt101.com"
+  skip_cleanup: true
+  on:
+    branch: master
+  local_dir: build
