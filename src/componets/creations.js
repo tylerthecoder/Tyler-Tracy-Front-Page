@@ -9,7 +9,13 @@ const imgStyle = {
 }
 
 const creationStyle = {
-  width: "33%"
+  width: "33%",
+  margin: "10px",
+}
+
+const creationsStyle = {
+  display: "flex",
+  justifyContent: "center",
 }
 
 class Creation extends PureComponent {
@@ -38,11 +44,13 @@ export default class Creations extends PureComponent {
     return (
       <div>
         <h1> Creations </h1>
+        <div style={creationsStyle}>
         {
           myCreations.creations.map(c => (
             <Creation creation={c} key={Math.random()}/>
           ))
         }
+        </div>
       </div>
     )
   }
