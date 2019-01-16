@@ -13,7 +13,15 @@
       "link": "http://www.tylertracy.com/Play/Number_Stats",
       "type": "game",
       "img": "http://www.tylertracy.com/Play/Number_Stats_Thumbnail.png"
+    },
+    {
+      "name": "Rubik's Cube Simulator",
+      "description": "A 3d Rubiks cube simulator made from css and javascript",
+      "link": "https://tgt101.com/cube",
+      "type": "game",
+      "img": "http://www.tylertracy.com/Play/Number_Stats_Thumbnail.png"
     }
+
   ],
   "3D Cube Simulator": {
     "description": "This is my first real 3D creation. It uses pure CSS. It also shows my passion of Rubik's Cubes.",
