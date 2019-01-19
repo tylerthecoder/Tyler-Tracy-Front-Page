@@ -27,6 +27,10 @@ export default class Navbar extends Component {
       {
         text: 'About',
         color: 'blue',
+      },
+      {
+        text: 'Contact',
+        color: 'blue',
       }
     ]
   }
