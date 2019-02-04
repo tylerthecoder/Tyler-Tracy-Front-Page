@@ -26,7 +26,7 @@ export default class TitleScreen extends Component {
           <div style={divStyle}>
             <div style={textDiv}>
               <h1> Tyler Tracy </h1>
-              <h6> Full stack developer</h6>
+              <h6> Full-Stack Developer</h6>
             </div>
           </div>
         </Parallax>

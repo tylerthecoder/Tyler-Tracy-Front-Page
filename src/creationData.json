@@ -19,30 +19,34 @@
       "description": "A 3d Rubiks cube simulator made from css and javascript",
       "link": "https://tgt101.com/cube",
       "type": "game",
+      "img": "http://tgt101.com/images/cube.png"
+    },
+    {
+      "name": "Battle Balls",
+      "description":"This is a multi-player game. You play on the same board as your opponent and you shoot him until he disappears",
+      "link": "http://www.tylertracy.com/Play/Battle_Balls",
+      "type": "game",
       "img": "http://www.tylertracy.com/Play/Number_Stats_Thumbnail.png"
+    },
+    {
+      "name": "Derivative Dash",
+      "description":"Warning, A basic understanding of calculus is required. This game test if you know the fundamentals of calculus",
+      "link": "http://www.tylertracy.com/Play/Derivative_Dash",
+      "type": "game",
+      "img": "http://www.tylertracy.com/Play/Derivative_Dash_Thumbnail.png"
+    },
+    {
+      "name": "Binary Blitz",
+      "description":"How quickly can you convert a base ten number into binary? Find out here",
+      "link": "http://www.tylertracy.com/Play/Binary_Blitz",
+      "type": "game",
+      "img": "http://www.tylertracy.com/Play/Binary_Blitz_Thumbnail.png"
     }
-
   ],
-  "3D Cube Simulator": {
-    "description": "This is my first real 3D creation. It uses pure CSS. It also shows my passion of Rubik's Cubes.",
-		"Favorite":true
-  },
-  "The Cookie Game":{
-    "description":"This is the Cookie Game. It is a game where you click a cookie. When you click it, you get a cookie! With certain amounts of cookies, you can buy things that make cookies by themselves. You think it is pointless? Well it is, but so are all games. I am also overly attached to this game because it is the first game I created. :)",
-		"Favorite":true
-  },
   "Tyler Cards":{
 	  "description":"This is my first multiplayer game. It only has slap jack right now, but i might add more games later. I'm releasing this on my 17th birthday. It works, but not all the time. There are anti-spam measures put in, so don't screw around or you will lose. Make sure to read the info.",
 		"Favorite":true
   },
-  "Battle Balls":{
-	  "description":"This is a multi-player game. You play on the same board as your opponent and you shoot him until he disappears",
-		"Favorite":true
-  },
-	"Derivative_Dash": {
-		"description":"Warning, A basic understanding of calculus is required. This game test if you know the fundementals of calculus",
-		"Favorite":true
-	},
 	"Binary_Blitz": {
 		"description":"Binary Blitz is a game where you try to change the one ",
 		"Favorite":true
