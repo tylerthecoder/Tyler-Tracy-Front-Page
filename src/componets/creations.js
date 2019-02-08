@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Parallax } from 'react-parallax';
-
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardActionArea from '@material-ui/core/CardActionArea';
 
 const myCreations = require('../creationData.json');
 
@@ -11,16 +12,21 @@ const rootStyle = {
 }
 
 const imgStyle = {
-  width: "100%",
-  border: "solid red 3px",
-  borderRadius: "20px",
+  width: "101%",
+  height: "200px",
 }
 
 const creationStyle = {
-  padding: "10px 40px",
-  margin: "10px",
   cursor: "pointer",
-  backgroundColor: "lightgrey",
+  backgroundColor: "#840000",
+  color: "white",
+  display: "inline-block",
+  width: "100%",
+  height: "100%",
+}
+
+const containerStyle = {
+  padding: "10px",
 }
 
 class Creation extends PureComponent {
@@ -28,18 +34,27 @@ class Creation extends PureComponent {
     const { creation } = this.props;
     const { link, name, img, description } = creation;
     return (
-      <Grid item xs={4}>
-        <Paper style={creationStyle}>
-          <h1> {name} </h1>
-          <a href={link}>
-            <img
-              src={img}
+      <Grid
+        item
+        xs={12}
+        sm={6}
+        lg={4}
+      >
+        <Card style={creationStyle}>
+          <CardActionArea
+            href={link}
+          >
+            <CardMedia
+              image={img}
               style={imgStyle}
-              alt={name + " Picture"}
+              title="Contemplative Reptile"
             />
-          </a>
-          <p> { description } </p>
-        </Paper>
+            <div style={containerStyle}>
+              <h1> {name} </h1>
+              <p> { description } </p>
+            </div>
+          </CardActionArea>
+        </Card>
       </Grid>
     )
   }
@@ -55,8 +70,16 @@ export default class Creations extends PureComponent {
         bgImage={require("../images/white-background.jpg")}
         strength={500}
       >
-        <div style={rootStyle}>
-          <Grid container spacing={24}>
+        <div
+          style={rootStyle}
+        >
+          <Grid
+            container
+            spacing={16}
+            alignItems="stretch"
+            direction="row"
+            justify="center"
+          >
             {
               myCreations.creations.map(c => (
                 <Creation creation={c} key={Math.random()}/>
