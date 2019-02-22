@@ -8,9 +8,12 @@ const uarkImgStyle = {
 
 const cardStyle = {
   minWidth: "200px",
-  display: "inline-block",
   margin: "10px",
   padding: "10px",
+  display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap",
+  justifyContent: "center",
 }
 
 const wrapperStyle = {
