@@ -30,7 +30,7 @@ export default class Bio extends PureComponent {
               imgHref="https://www.uark.edu"
               imgAlt="University of Arkansas Logo"
             >
-              <p> Rising Junior </p>
+              <p> Junior </p>
               <p>
                 Computer Science Major <br /> Mathematics Minor{" "}
               </p>

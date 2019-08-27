@@ -26,7 +26,7 @@ export default class ProfileImgCard extends PureComponent {
           <img
             style={profileImgStyle}
             alt="Tyler Tracy"
-            src="https://tgt101.com/images/tyler.jpg"
+            src={require("../../images/tyler.jpg")}
           />
         </CardContent>
       </Card>

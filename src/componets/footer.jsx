@@ -11,7 +11,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div style={containerStyle}>
-        <a href="https://tgt101.com/resume/"> Resume </a>
+        <a href="https://tgt101.com/resume.pdf"> Resume </a>
         <span>
           <b>Email:</b>
           <a href="mailto:tylertracy1999@gmail.com">
