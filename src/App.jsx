@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import TitleScreen from "./componets/titleScreen";
-import Creations from "./componets/creations";
+import TitleScreen from "./componets/title_screen/titleScrren";
+import Creations from "./componets/creations/creations";
 import Banner from "./componets/banner";
 import Bio from "./componets/bio/bio";
 import Footer from "./componets/footer";

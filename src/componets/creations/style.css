@@ -1,0 +1,24 @@
+#creations {
+  padding: 10px;
+}
+
+#creations .creation {
+  cursor: pointer;
+  background-color: #840000;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#creation .creation a {
+  height: 100%;
+}
+
+#creations .creation .img {
+  height: 200px;
+}
+
+#creations .creation div {
+  padding: 10px;
+}

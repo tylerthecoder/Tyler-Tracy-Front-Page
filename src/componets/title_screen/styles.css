@@ -1,0 +1,26 @@
+#titleScreen {
+  font-size: 4em;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#titleScreen div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+#titleScreen h6 {
+  margin: 0px;
+}
+
+#titleScreen .cursor {
+  width: 0px;
+  margin-right: 10px;
+  margin-left: -10px;
+}
