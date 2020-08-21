@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { LINKEDIN_URL, RESUME_LINK } from "../constants";
 
 const containerStyle = {
   borderTop: "solid black 2px",
@@ -11,15 +12,14 @@ export default class Footer extends Component {
   render() {
     return (
       <div style={containerStyle}>
-        <a href="https://tgt101.com/resume.pdf"> Resume </a>
+        <a href={RESUME_LINK}> Resume </a>
         <span>
-          <b>Email:</b>
+          <b>Email: </b>
           <a href="mailto:tylertracy1999@gmail.com">
-            {" "}
             tylertracy1999@gmail.com{" "}
           </a>
         </span>
-        <a href="https://www.linkedin.com/in/tyler-tracy/"> Linkedin </a>
+        <a href={LINKEDIN_URL}> Linkedin </a>
       </div>
     );
   }

@@ -34,12 +34,13 @@ export default class Creations extends React.Component {
 
   componentDidMount() {
     const url = `${SERVER_URL}/creations`;
-    console.log(url);
     fetch(url)
       .then(response => response.text())
       .then(data => {
         try {
-          const creations = JSON.parse(data);
+          const creations = JSON.parse(data).body;
+
+          console.log(creations);
 
           // validate the data
           if (!creations || !creations.length) {

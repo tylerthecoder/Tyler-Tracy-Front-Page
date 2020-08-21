@@ -24,7 +24,6 @@ export default class Bio extends PureComponent {
       >
         <div style={outerStyle}>
           <div style={containerStyle}>
-            <ProfileImgCard />
             <BioCard
               imgUrl={require("../../images/uarkLogo.png")}
               imgHref="https://www.uark.edu"

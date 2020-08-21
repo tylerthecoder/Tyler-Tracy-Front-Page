@@ -3,12 +3,16 @@
   color: white;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-#titleScreen div {
+#titleScreen > * {
+  margin: 10px;
+}
+
+#titleScreen .typeText {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +23,27 @@
   margin: 0px;
 }
 
+#titleScreen h1 {
+  margin-bottom: 10px;
+}
+
 #titleScreen .cursor {
   width: 0px;
   margin-right: 10px;
   margin-left: -10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #titleScreen {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #titleScreen h1 {
+    font-size: 1em;
+  }
+  #titleScreen h6 {
+    font-size: .5em;
+  }
 }
