@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { wait } from "../utils";
-
-
+import React, { useState } from "react";
 
 function useCoolEase(init, max) {
   const [val, setVal] = useState(init);

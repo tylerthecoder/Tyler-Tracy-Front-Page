@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react";
 import { Parallax } from "react-parallax";
-import ProfileImgCard from "./profile-card";
 import BioCard from "../common/bio-card";
 
 const containerStyle = {
