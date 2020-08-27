@@ -2,7 +2,7 @@
   "name": "tylertracywebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tgt101.com/home",
+  "homepage": "https://tylertracy.com/home",
   "dependencies": {
     "@material-ui/core": "^3.9.1",
     "react": "^16.13.1",

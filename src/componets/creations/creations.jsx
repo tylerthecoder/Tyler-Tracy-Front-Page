@@ -40,8 +40,6 @@ export default class Creations extends React.Component {
         try {
           const creations = JSON.parse(data).body;
 
-          console.log(creations);
-
           // validate the data
           if (!creations || !creations.length) {
             throw new Error("Creation data malformed");

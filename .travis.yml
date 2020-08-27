@@ -7,13 +7,14 @@ install:
 
 script:
   - npm run build
+  - rm ./build/service-worker.js
+  - rm ./asset-manifest.json
 
 deploy:
   provider: s3
   access_key_id: "$AWS_KEY"
   secret_access_key: "$AWS_SECRET"
   bucket: "tylertracy.com"
-  upload-dir: home
   skip_cleanup: true
   on:
     branch: master
