@@ -8,7 +8,7 @@ install:
 script:
   - npm run build
   - rm ./build/service-worker.js
-  - rm ./asset-manifest.json
+  - rm ./build/asset-manifest.json
 
 deploy:
   provider: s3
