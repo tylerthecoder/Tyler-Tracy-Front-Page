@@ -38,7 +38,7 @@ export default class Creations extends React.Component {
       .then(response => response.text())
       .then(data => {
         try {
-          const creations = JSON.parse(data).body;
+          const creations = JSON.parse(data);
 
           // validate the data
           if (!creations || !creations.length) {

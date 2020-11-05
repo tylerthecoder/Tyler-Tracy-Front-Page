@@ -21,13 +21,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        
+
       - name: Install
         run: yarn
-        
+
       - name: Build
         run: yarn build
-        
+
+      - name: Clean
+        run: rm -f ./build/service-worker.js ./build/asset-manifest.json
+
       - name: Deploy
         uses: jakejarvis/s3-sync-action@v0.5.1
         with:
