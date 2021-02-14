@@ -5,7 +5,7 @@ import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import "./style.css";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import { SERVER_URL } from "../../constants";
+import API from "../../api";
 
 class Creation extends React.PureComponent {
   render() {
@@ -29,27 +29,13 @@ class Creation extends React.PureComponent {
 
 export default class Creations extends React.Component {
   state = {
-    creations: []
+    creations: [],
   };
 
   componentDidMount() {
-    const url = `${SERVER_URL}/creations`;
-    fetch(url)
-      .then(response => response.text())
-      .then(data => {
-        try {
-          const creations = JSON.parse(data);
-
-          // validate the data
-          if (!creations || !creations.length) {
-            throw new Error("Creation data malformed");
-          }
-
-          this.setState({ creations });
-        } catch (err) {
-          console.error(err);
-        }
-      });
+    API.getCreations().then((creations) => {
+      this.setState({ creations });
+    });
   }
 
   render() {
@@ -69,7 +55,7 @@ export default class Creations extends React.Component {
             direction="row"
             justify="center"
           >
-            {creations.map(c => (
+            {creations.map((c) => (
               <Creation creation={c} key={Math.random()} />
             ))}
           </Grid>

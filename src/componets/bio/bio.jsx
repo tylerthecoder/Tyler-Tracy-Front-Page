@@ -4,13 +4,13 @@ import BioCard from "../common/bio-card";
 
 const containerStyle = {
   display: "flex",
-  flexDirection: "column"
+  flexDirection: "column",
 };
 
 const outerStyle = {
-  display: "inline-flex",
+  display: "flex",
   flexDirection: "row",
-  justifyContent: "center"
+  justifyContent: "center",
 };
 
 export default class Bio extends PureComponent {

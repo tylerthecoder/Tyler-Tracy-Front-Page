@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Parallax } from "react-parallax";
+import API from "../../api";
 import { wait } from "../../utils";
 import HeadShot from "../headshot";
+import NowPlaying from "../nowPlaying";
 import "./styles.css";
-
 
 // function useTypeyText(message) {
 //   const [text, setText] = useState("");
@@ -19,18 +20,21 @@ import "./styles.css";
 //     }, 300);
 //   }
 
-
-
 //   return [text, cursor];
 // }
 
 export default function TitleScreen() {
   const [subtitle, setSubtitle] = useState("");
   const [cursor, setCursor] = useState(false);
+  const [currentSong, setCurrentSong] = useState(null);
+
+  useEffect(() => {
+    API.getCurrentSong().then(setCurrentSong);
+  }, []);
 
   useEffect(() => {
     animateSubtitle();
-  }, [])
+  }, []);
 
   async function animateSubtitle() {
     for (let i = 0; i < 2; i++) {
@@ -62,7 +66,7 @@ export default function TitleScreen() {
   return (
     <Parallax
       blur={0}
-      bgImage={require("../../images/red-background-2.jpg")}
+      bgImage={require("../../images/red-background-2.webp")}
       strength={500}
     >
       <div id="titleScreen">
@@ -72,6 +76,7 @@ export default function TitleScreen() {
             <h6>{subtitle.length ? subtitle : " "}</h6>
             {cursor && <span className="cursor">│</span>}
           </div>
+          <NowPlaying currentSong={currentSong} />
         </div>
         <HeadShot />
       </div>

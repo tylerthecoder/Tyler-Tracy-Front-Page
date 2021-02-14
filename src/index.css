@@ -3,3 +3,49 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
 }
+
+.flex-container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chip {
+  border-radius: 16px;
+  padding: 5px;
+  background-color: lightgray;
+  color: black;
+  display: inline-block;
+  height: 32px;
+  cursor: pointer;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+#listeningToText {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+#songName {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#artistName {
+  font-size: 12px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.chip:hover {
+  background-color: darkgray;
+}
+
+.chip img {
+  margin: -5px;
+  border-radius: 16px 0px 0px 16px;
+  padding-right: 10px;
+  height: 42px;
+}
